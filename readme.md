@@ -14,15 +14,15 @@ Run `bash /root/Desktop/start.sh` to start obs via VNC.
 
 ## VNC Viewer
 Open the vnc viewer and connect to port 5900. 
-You can optionally add a password if you would like to protect vnc service by password, set environment variable VNC_PASSWORD, for example
+You can optionally add a password if you would like to protect vnc service by password, set environment variable `VNC_PASSWORD`, for example
 
-docker run -p 5900:5900 -e VNC_PASSWORD=mypassword luxbit/docker-obs-nvenc
+`docker run -p 5900:5900 -e VNC_PASSWORD=mypassword luxbit/docker-obs-nvenc`
 A prompt will ask password either in the browser or vnc viewer.
 
 # HTTP Base Authentication
 This image also provides base access authentication of HTTP via HTTP_PASSWORD
 
-docker run -p 6080:80 -e HTTP_PASSWORD=mypassword luxbit/docker-obs-nvenc
+`docker run -p 6080:80 -e HTTP_PASSWORD=mypassword luxbit/docker-obs-nvenc`
 
 # Further details
 For more information please consider looking at the [base image documentation](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/) 
